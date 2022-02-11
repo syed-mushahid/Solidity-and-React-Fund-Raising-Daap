@@ -1,0 +1,368 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Roboto&display=swap");
+:root {
+  --primaryCol: #542e71;
+  --secCol: #fb3640;
+  --green: #1dbf73;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: white;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.topHeader {
+  padding-top: 20px;
+  border-width: 0px;
+}
+
+.Toplanding {
+  background: linear-gradient(0deg, #00000079, #00000080),
+    url(./images/topimg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 102vh;
+  margin-top: -88px;
+  padding-top: 140px;
+}
+#logo {
+  color: var(--secCol);
+  font-size: 2rem;
+  font-weight: bolder;
+}
+.nav-link {
+  color: var(--primaryCol) !important;
+  font-size: 1.5rem;
+  text-shadow: 2px 2px 5px 5px #0000;
+  margin-left: 20px;
+}
+.changefont {
+  color: white !important;
+}
+.nav-link:hover {
+  color: rgb(235, 235, 235) !important;
+}
+
+.TagLine {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: white;
+  font-size: 70px;
+  font-weight: bolder;
+  font-family: "Anton", sans-serif;
+  width: 100%;
+  text-align: center;
+  text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9,
+    0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1),
+    0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2),
+    0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2),
+    0 20px 20px rgba(0, 0, 0, 0.15);
+}
+.Collection-counter {
+  font-size: 12rem;
+  color: white;
+  width: 100%;
+  text-align: center;
+  font-weight: bolder;
+}
+.counter {
+  -webkit-text-stroke: 4px var(--primaryCol);
+}
+.counterTxt {
+  color: white;
+  letter-spacing: 2px;
+  font-size: 35px;
+  margin-top: -20px;
+}
+.scrolled {
+  /* background: linear-gradient(0deg, #bd1e5042, #64072563) !important;
+  border-bottom: 1px solid rgba(225,225,225,0.5) !important; */
+  z-index: 2;
+  backdrop-filter: blur(5px);
+  background-color: var(--primaryCol) !important;
+  box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.479);
+  -webkit-transition: all 700ms ease;
+  -moz-transition: all 700ms ease;
+  -ms-transition: all 700ms ease;
+  transition: all 700ms ease;
+}
+
+#tsparticles {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+#background-video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.card {
+  border: none;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.c-details span {
+  font-weight: 300;
+  font-size: 13px;
+}
+
+.badge span {
+  background-color: var(--secCol);
+  height: 25px;
+  padding: 4px 6px;
+  border-radius: 5px;
+  display: flex;
+  color: #fffbec;
+  letter-spacing: 1px;
+  justify-content: center;
+  align-items: center;
+}
+.projectThumbnail {
+  position: relative;
+  overflow: hidden;
+}
+.projectThumbnail img {
+  width: 100%;
+  aspect-ratio: 5/3;
+  object-fit: cover;
+  transition: transform 0.2s;
+}
+.progress {
+  height: 10px;
+  border-radius: 10px;
+}
+
+.progress div {
+  background-color: #198754;
+}
+
+.text1 {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.text2 {
+  color: #a5aec0;
+}
+
+.donate-button {
+  background-color: rgba(0, 0, 0, 0.426);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  cursor: pointer;
+  width: 100%;
+  aspect-ratio: 5/3;
+  object-fit: cover;
+  transition: transform 0.2s;
+  z-index: 200;
+}
+
+.donate-button button {
+  padding: 10px;
+  border-radius: 50px;
+  background-color: var(--primaryCol);
+  color: white;
+  border: 1px solid white;
+  cursor: pointer;
+}
+.zoom-thumbnail {
+  transform: scale(1.1);
+}
+.donateNow {
+}
+.deadlineCard {
+  background: var(--primaryCol);
+  padding: 8px 5px;
+  width: fit-content;
+  color: white;
+  margin-left: 15px;
+  position: absolute;
+  z-index: 500;
+  margin-top: -5px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
+}
+.deadlineCard p {
+  margin: 0;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+#emergencyBadge {
+  background: rgb(236, 235, 235);
+  color: red;
+}
+
+.projectPageThumbnail img {
+  width: 100%;
+  aspect-ratio: 5/3;
+  object-fit: cover;
+}
+
+.deadLineTimer {
+  font-weight: normal;
+  letter-spacing: 0.01rem;
+  text-transform: uppercase;
+}
+
+.countDown {
+  display: inline-block;
+  font-size: 0.8em;
+  list-style-type: none;
+  padding: 1em;
+  text-transform: uppercase;
+}
+
+.countDown span {
+  display: block;
+  font-size: 4.5rem;
+}
+
+.donate-options {
+  border-radius: 30px;
+}
+.donationCard {
+  box-shadow: 0px 0px 4px 0.2px rgba(0, 0, 0, 0.5);
+}
+.ErrorBoxNotification {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+  z-index: 9999999;
+}
+
+.receipt {
+  background-color: #fff;
+  margin: auto;
+  position: relative;
+  padding: 1rem;
+  box-shadow: 0 -0.4rem 1rem -0.4rem rgba(0, 0, 0, 0.2);
+}
+
+.receipt:after {
+  background-image: linear-gradient(135deg, #fff 0.5rem, transparent 0),
+    linear-gradient(-135deg, #fff 0.5rem, transparent 0);
+  background-position: left-bottom;
+  background-repeat: repeat-x;
+  background-size: 1rem;
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -1rem;
+  left: 0;
+  width: 100%;
+  height: 1rem;
+}
+
+.receipt__header {
+  text-align: center;
+}
+
+.receipt__title {
+  color: var(--primaryCol);
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin: 1rem 0 0.5rem;
+}
+
+.receipt__date {
+  font-size: 0.8rem;
+  color: #666;
+  margin: 0.5rem 0 1rem;
+}
+
+.receipt__list {
+  margin: 2rem 0 1rem;
+  padding: 0 1rem;
+}
+
+.receipt__list-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+  position: relative;
+}
+
+.receipt__list-row:after {
+  content: "";
+  display: block;
+  border-bottom: 1px dotted rgba(0, 0, 0, 0.15);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: -0.25rem;
+}
+
+.receipt__item {
+  background-color: #fff;
+
+  padding: 0 0.15rem 0 0;
+  color: #1f1f1f;
+}
+
+.receipt__cost {
+  margin: 0;
+  padding: 0 0 0 0.15rem;
+  background-color: #fff;
+
+  color: #1f1f1f;
+}
+
+.receipt__list-row--total {
+  border-top: 1px solid var(--primaryCol);
+  padding: 1.5rem 0 0;
+  margin: 1.5rem 0 0;
+  font-weight: 700;
+}
+
+.emergencyProjects h2 {
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+  color: red;
+  text-shadow: 2px 2px 5px 5px rgb(0, 0, 0);
+  padding: 10px;
+  letter-spacing: 1px;
+}
+.activeProjects {
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+  color: rgb(0, 255, 136);
+  text-shadow: 2px 2px 5px 5px rgb(0, 0, 0);
+  padding: 10px;
+  letter-spacing: 1px;
+}
+
+.acivements h3 {
+  width: 100%;
+  text-align: center;
+}
